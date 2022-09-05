@@ -6,7 +6,6 @@ import SummarizeTwoToneIcon from "@mui/icons-material/Summarize";
 import LibraryBooksIcon from "@mui/icons-material/LibraryBooks";
 import { CardActionArea } from "@mui/material";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
-
 function Menu() {
   return (
     <Stack
@@ -20,7 +19,7 @@ function Menu() {
         sx={{ maxWidth: 325, boxShadow: 4 }}
         style={{ border: "2px solid black" }}
       >
-        <CardActionArea href="https://google.com">
+        <CardActionArea>
           <CardContent>
             <SummarizeTwoToneIcon sx={{ fontSize: 100 }} />
             <Typography variant="h3">Projects</Typography>
@@ -31,7 +30,7 @@ function Menu() {
             <KeyboardArrowRightIcon sx={{ fontSize: 80 }} />
           </CardContent>
         </CardActionArea>
-      </Card>
+      </Card>{" "}
       <Card
         sx={{ maxWidth: 325, boxShadow: 4 }}
         style={{ border: "2px solid black" }}
@@ -47,7 +46,6 @@ function Menu() {
           </CardContent>
         </CardActionArea>
       </Card>
-
       <Card
         sx={{ maxWidth: 325, boxShadow: 4 }}
         style={{ border: "2px solid black" }}
@@ -55,9 +53,9 @@ function Menu() {
         <CardActionArea>
           <CardContent>
             <LibraryBooksIcon sx={{ fontSize: 100 }} />
-            <Typography variant="h3">Experience</Typography>
+            <Typography variant="h3">About Me</Typography>
             <Typography variant="body1" paddingX="1%">
-              These are the relevant work experiences, including internships
+              This section includes some fun facts about me :)
             </Typography>
             <KeyboardArrowRightIcon sx={{ fontSize: 80 }} />
           </CardContent>
