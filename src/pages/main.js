@@ -1,6 +1,7 @@
 import { Card, Typography } from "@mui/material";
 import Box from "@mui/material/Box";
 import "../App.css";
+import Menu from "./menu";
 
 function Main() {
   return (
@@ -8,12 +9,13 @@ function Main() {
       <Box className="Main" justifyContent="center">
         <Card variant="string">
           <Typography
-            fontSize={"1.3em"}
+            fontSize={{ xs: "0.7em", sm: "1.3em" }}
             fontStyle={"Tahoma"}
             marginLeft={"23%"}
             marginRight={"23%"}
             style={{ border: "4px solid black" }}
             padding={"1%"}
+            paddingLeft={"4%"}
           >
             &#128080; Hello there! My name is Vidya, <br></br>and I am a junior
             at Purdue University <br></br> studying Computer Science &#128187;
@@ -21,6 +23,7 @@ function Main() {
         </Card>
         <br></br>
       </Box>
+      <Menu />
     </Box>
   );
 }

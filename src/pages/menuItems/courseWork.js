@@ -5,14 +5,14 @@ function Course() {
       <br></br>
       <Typography
         align="left"
-        variant="h4"
+        variant="h2"
         component="h4"
         marginX="5%"
         paddingX="1%"
       >
         Course Work
       </Typography>
-      <br></br> <br></br>
+      <br></br>
       <Typography
         align="left"
         variant="h4"

@@ -5,44 +5,32 @@ import Stack from "@mui/material/Stack";
 import SummarizeTwoToneIcon from "@mui/icons-material/Summarize";
 import LibraryBooksIcon from "@mui/icons-material/LibraryBooks";
 import { CardActionArea } from "@mui/material";
-import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
+import AccountBoxIcon from "@mui/icons-material/AccountBox";
+import { useNavigate } from "react-router-dom";
 function Menu() {
+  const navigate = useNavigate();
   return (
     <Stack
-      direction="row"
+      direction={{ xs: "column", sm: "row" }}
       spacing={10}
       alignItems="center"
       marginTop={"2%"}
       justifyContent="space-evenly"
     >
       <Card
-        sx={{ maxWidth: 325, boxShadow: 4 }}
+        sx={{ maxWidth: 325, boxShadow: 4, alignContent: "center" }}
         style={{ border: "2px solid black" }}
       >
-        <CardActionArea>
-          <CardContent>
+        <CardActionArea onClick={() => navigate("projects")}>
+          <CardContent align="center">
             <SummarizeTwoToneIcon sx={{ fontSize: 100 }} />
-            <Typography variant="h3">Projects</Typography>
-            <Typography variant="body1" paddingX="%">
-              These are the personal projects I've completed on topics I'm
-              interested in
+            <Typography variant="h4" fontStyle={"Tahoma"}>
+              Experience
             </Typography>
-            <KeyboardArrowRightIcon sx={{ fontSize: 80 }} />
-          </CardContent>
-        </CardActionArea>
-      </Card>{" "}
-      <Card
-        sx={{ maxWidth: 325, boxShadow: 4 }}
-        style={{ border: "2px solid black" }}
-      >
-        <CardActionArea>
-          <CardContent>
-            <LibraryBooksIcon sx={{ fontSize: 100 }} />
-            <Typography variant="h3">Course Work</Typography>
-            <Typography variant="body1" paddingX="%">
-              These are the relevant classes I have taken at Purdue University
+            <Typography variant="body1" paddingX="%" fontStyle={"Tahoma"}>
+              These are the professional experiences and personal projects I've
+              completed
             </Typography>
-            <KeyboardArrowRightIcon sx={{ fontSize: 80 }} />
           </CardContent>
         </CardActionArea>
       </Card>
@@ -50,14 +38,31 @@ function Menu() {
         sx={{ maxWidth: 325, boxShadow: 4 }}
         style={{ border: "2px solid black" }}
       >
-        <CardActionArea>
-          <CardContent>
+        <CardActionArea onClick={() => navigate("CourseWork")}>
+          <CardContent align="center">
             <LibraryBooksIcon sx={{ fontSize: 100 }} />
-            <Typography variant="h3">About Me</Typography>
-            <Typography variant="body1" paddingX="1%">
-              This section includes some fun facts about me :)
+            <Typography variant="h4" fontStyle={"Tahoma"}>
+              Courses Taken
             </Typography>
-            <KeyboardArrowRightIcon sx={{ fontSize: 80 }} />
+            <Typography variant="body1" paddingX="%" fontStyle={"Tahoma"}>
+              These are the relevant classes I have taken at Purdue University
+            </Typography>
+          </CardContent>
+        </CardActionArea>
+      </Card>
+      <Card
+        sx={{ maxWidth: 325, boxShadow: 4 }}
+        style={{ border: "2px solid black" }}
+      >
+        <CardActionArea onClick={() => navigate("AboutMe")}>
+          <CardContent align="center">
+            <AccountBoxIcon sx={{ fontSize: 110 }} />
+            <Typography variant="h4" fontStyle={"Tahoma"}>
+              About Me
+            </Typography>
+            <Typography variant="body1" paddingX="1%">
+              This section includes some fun and interesting facts about me :)
+            </Typography>
           </CardContent>
         </CardActionArea>
       </Card>
