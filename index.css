@@ -19,7 +19,7 @@
 }
 
 .accordion {
-  color: #3d3d90;
+  color: var(--text);
   cursor: pointer;
   text-align: left;
   border: none;
@@ -63,7 +63,7 @@ nav {
   --secondary-color: #333333;
   --rect-color: #181a18;
   --shadow: 0;
-  --text: white;
+  --text: #fede00;
   --desc: #222222;
   --desc-proj: #222222;
 }
@@ -144,6 +144,10 @@ body {
   display: flex;
   flex-direction: row;
   gap: 25px;
+  li {
+    padding-left: 0.5em;
+    color: #fede00;
+  }
 }
 
 .navbar {
@@ -275,5 +279,8 @@ html {
   }
   #home {
     padding-left: 60px;
+  }
+  .social-media {
+    list-style-type: none;
   }
 }
