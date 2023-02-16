@@ -24,12 +24,9 @@
   </head>
   <body>
     <nav>
-      <ul style="padding: 2px" class="navbar">
+      <ul class="navbar">
         <li><a href="#home">VidyaVuppala</a></li>
-        <ul
-          style="float: right; margin-right: 14px; display: flex; gap: 30px"
-          class="navbar"
-        >
+        <ul style="float: right; display: flex" class="navbar">
           <li><a href="#about-me">AboutMe</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#experience">Experience</a></li>
@@ -39,8 +36,18 @@
     </nav>
     <div class="landing-page" id="home">
       <div style="font-size: medium; margin: 0; padding: 0">Hi, my name is</div>
-      <div style="font-size: 80px; margin: 0; padding: 0">VIDYA VUPPALA</div>
-      <div style="font-size: medium">
+      <div
+        style="
+          font-size: 72px;
+          margin: 0;
+          padding: 0;
+          text-align: center;
+          width: 80%;
+        "
+      >
+        VIDYA VUPPALA
+      </div>
+      <div style="font-size: 12px; text-align: center; width: 60%">
         Student at Purdue University | B.S in Computer Science | Minor in
         Linguistics
       </div>
@@ -98,7 +105,7 @@
     </div>
     <div class="section" id="about-me">
       <div style="font-size: x-large">A Little Bit About Me</div>
-      <div style="font-size: medium; width: 50%">
+      <div style="font-size: medium">
         Hello! My name is Vidya Vuppala, and I'm currently a junior at Purdue
         University majoring in Computer Science and pursuing a minor in
         Linguistics. I'm involved in Purdue LaunchPad as the Advertisements and
@@ -114,7 +121,7 @@
           <div class="name">
             <img
               src="wander.png"
-              alt=""
+              alt="Web App called Wander"
               height="200"
               style="border-radius: 8px"
             />
@@ -130,14 +137,6 @@
           </div>
         </div>
         <div class="rectangle">
-          <div class="description" style="padding: 15px">
-            Boiler Tracks - Backend Developer
-            <br />
-            <br />
-            I was a backend developer for a group that created a web app called
-            BoilerTracks that helps CS students at Purdue plan their academic
-            career by helping them optimize their classes
-          </div>
           <div class="name">
             <img
               src="boilertracks.png"
@@ -146,6 +145,14 @@
               width="325"
               style="border-radius: 8px"
             />
+          </div>
+          <div class="description" style="padding: 15px">
+            Boiler Tracks - Backend Developer
+            <br />
+            <br />
+            I was a backend developer for a group that created a web app called
+            BoilerTracks that helps CS students at Purdue plan their academic
+            career by helping them optimize their classes
           </div>
         </div>
         <div style="margin-top: 20px; font-size: medium">
@@ -164,7 +171,7 @@
             >
               React.js
             </div>
-            <div class="tech" style="font-style: normal; padding-left: 15px">
+            <div class="tech" style="font-style: normal; padding-left: 5px">
               <span style="display: flex; flex-direction: row">
                 <div style="width: 50%">LTHC Website</div>
                 <svg
@@ -185,14 +192,7 @@
               </span>
             </div>
           </div>
-          <div
-            class="description"
-            style="
-              background-color: var(--desc-proj);
-              padding-top: 5px;
-              height: 145px;
-            "
-          >
+          <div class="description" style="background-color: var(--desc-proj)">
             I was part of a group that created a web app, using JavaScript HTML,
             CSS, for a local community’s homeless shelter called LTHC in West
             Lafayette, Indiana.
@@ -213,7 +213,11 @@
         </div>
         <div
           class="description"
-          style="background-color: var(--desc-proj); padding-top: 5px"
+          style="
+            background-color: var(--desc-proj);
+            padding-top: 5px;
+            height: 145px;
+          "
         >
           Shell interpreter written in C++ that replicates functionality of csh
           and bash shells.
@@ -250,9 +254,9 @@
             class="description"
             style="background-color: var(--desc-proj); padding-top: 5px"
           >
-            I created an android app to help people dispose waste correctly. The
-            app analyses an image of trash to help the user dispose effectively.
-            It is made on Android Studio and uses Firebase Machine Learning.
+            I created an android app to help dispose waste correctly. The app
+            analyses an image of trash to categorize the trash. It is made on
+            Android Studio and uses Firebase Machine Learning.
           </div>
         </div>
       </a>
