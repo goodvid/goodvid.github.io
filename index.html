@@ -24,7 +24,7 @@
   <body>
     <nav>
       <ul class="navbar">
-        <li><a href="#home">VidyaVuppala</a></li>
+        <li><a href="#home" style="text-decoration: none">VidyaVuppala</a></li>
         <ul style="float: right; display: flex; gap: 20px" class="navbar">
           <a href="https://github.com/goodvid" target="_blank">
             <svg
@@ -95,16 +95,26 @@
       </div>
       <div class="social-media" style="padding-top: 10px">
         <li style="color: #fede00">
-          <a href="#about-me" style="color: var(--text)">AboutMe</a>
+          <a href="#about-me" style="color: var(--text); text-decoration: none"
+            >About Me</a
+          >
         </li>
         <li style="color: #fede00">
-          <a style="color: var(--text)" href="#projects">Projects</a>
+          <a style="color: var(--text); text-decoration: none" href="#projects"
+            >Projects</a
+          >
         </li>
         <li style="color: #fede00">
-          <a style="color: var(--text)" href="#experience">Experience</a>
+          <a
+            style="color: var(--text); text-decoration: none"
+            href="#experience"
+            >Experience</a
+          >
         </li>
         <li style="color: #fede00">
-          <a style="color: var(--text)" href="#education">Education</a>
+          <a style="color: var(--text); text-decoration: none" href="#education"
+            >Education</a
+          >
         </li>
       </div>
     </div>
@@ -113,10 +123,22 @@
       <div style="font-size: medium">
         Hello! My name is Vidya Vuppala, and I'm currently a junior at Purdue
         University majoring in Computer Science and pursuing a minor in
-        Linguistics. I'm involved in Purdue LaunchPad as the Advertisements and
-        Communications Lead, a web developer as a part of NeuroTech@Purdue, and
-        previously part of Hack the Future. In my free time, I love to read
-        books, crochet and dance.
+        Linguistics. I'm the Advertisements and Communications Lead of
+        <a
+          href="https://boilerlink.purdue.edu/organization/launchpad/"
+          style="text-decoration: underline dotted"
+          >LaunchPad</a
+        >, a web developer as a part of
+        <a
+          href="https://purduensp.wordpress.com/"
+          style="text-decoration: underline dotted"
+          >NeuroTech Society @ Purdue</a
+        >, and part of
+        <a
+          href="https://htfpurdue.org/"
+          style="text-decoration: underline dotted"
+          >Hack the Future</a
+        >. In my free time, I love to read books, crochet and dance.
       </div>
       <div style="margin-top: 20px; font-size: medium">
         Highlighted Projects
@@ -178,22 +200,9 @@
             </div>
             <div class="tech" style="font-style: normal; padding-left: 5px">
               <span style="display: flex; flex-direction: row">
-                <div style="width: 50%">LTHC Website</div>
-                <svg
-                  width="10"
-                  height="10"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  transform="rotate(315)"
-                  style="margin-top: 4px; padding: 0"
-                  fill="black"
-                >
-                  <path
-                    d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z"
-                  />
-                </svg>
+                <div style="width: 50%; text-decoration: underline dotted">
+                  LTHC Website
+                </div>
               </span>
             </div>
           </div>
@@ -216,10 +225,7 @@
             </span>
           </div>
         </div>
-        <div
-          class="description"
-          style="background-color: var(--desc-proj); padding-top: 5px"
-        >
+        <div class="description" style="background-color: var(--desc-proj)">
           Shell interpreter written in C++ that replicates functionality of csh
           and bash shells.
         </div>
@@ -231,36 +237,38 @@
               Java
             </div>
             <div class="tech" style="font-style: normal; padding-left: 15px">
-              <span style="display: flex; flex-direction: row">
+              <span
+                style="
+                  display: flex;
+                  flex-direction: row;
+                  text-decoration: underline dotted;
+                "
+              >
                 Recycl
-                <svg
-                  width="8"
-                  height="8"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  transform="rotate(315)"
-                  style="margin-top: 4px; padding: 0"
-                  stroke-width="2"
-                >
-                  <path
-                    d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z"
-                  />
-                </svg>
               </span>
             </div>
           </div>
-          <div
-            class="description"
-            style="background-color: var(--desc-proj); padding-top: 5px"
-          >
+          <div class="description" style="background-color: var(--desc-proj)">
             I created an android app to help dispose waste correctly. The app
             analyses an image of trash to categorize the trash. It is made on
             Android Studio and uses Firebase Machine Learning.
           </div>
         </div>
       </a>
+    </div>
+    <div class="section" id="skills">
+      <div style="font-size: x-large">Skills</div>
+      <div style="display: flex; flex-wrap: wrap; gap: 10px">
+        <div class="skill">Python - Competent</div>
+        <div class="skill">Java - Proficient</div>
+        <div class="skill">JavaScript - Proficient</div>
+        <div class="skill">C++ - Competent</div>
+        <div class="skill">C - Competent</div>
+        <div class="skill">HTML/CSS - Proficient</div>
+        <div class="skill">Firebase - Competent</div>
+        <div class="skill">React.js - Proficient</div>
+        <span style="display: inline" class="skill">Flutter - Beginner</span>
+      </div>
     </div>
     <div
       class="section"
@@ -305,98 +313,29 @@
 
         <a
           href="https://www.cs.purdue.edu/undergraduate/curriculum/bachelor.html"
-          ><div>
-            <br />Tracks
-            <sup>
-              <svg
-                width="8"
-                height="8"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                transform="rotate(315)"
-                style="margin-top: 4px; padding: 0"
-              >
-                <path
-                  d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z"
-                />
-              </svg>
-            </sup>
-          </div>
+          ><div style="text-decoration: underline dotted"><br />Tracks</div>
         </a>
 
         <ul>
           <a
             href="https://www.cs.purdue.edu/undergraduate/curriculum/track_softengr_fall2019.html"
             target="_blank"
-            ><li>
-              Software Engineering
-              <sup>
-                <svg
-                  width="8"
-                  height="8"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  transform="rotate(315)"
-                  style="margin-top: 4px; padding: 0"
-                >
-                  <path
-                    d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z"
-                  />
-                </svg>
-              </sup>
-            </li>
+            style="text-decoration: underline dotted"
+            ><li>Software Engineering</li>
           </a>
 
           <a
             href="https://www.cs.purdue.edu/undergraduate/curriculum/track_MI_fall2019.html"
             target="_blank"
+            style="text-decoration: underline dotted"
           >
-            <li>
-              Machine Learning
-              <sup>
-                <svg
-                  width="8"
-                  height="8"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  transform="rotate(315)"
-                  style="margin-top: 4px; padding: 0"
-                >
-                  <path
-                    d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z"
-                  />
-                </svg>
-              </sup>
-            </li>
+            <li>Machine Learning</li>
           </a>
           <a
             href="https://www.cs.purdue.edu/undergraduate/curriculum/track_ss_fall2019.html"
             target="_blank"
-            ><li>
-              Systems Software
-              <sup>
-                <svg
-                  width="8"
-                  height="8"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  transform="rotate(315)"
-                  style="margin-top: 4px; padding: 0"
-                >
-                  <path
-                    d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z"
-                  />
-                </svg>
-              </sup>
-            </li>
+            style="text-decoration: underline dotted"
+            ><li>Systems Software</li>
           </a>
         </ul>
         <div><br />Relevant Classes</div>
